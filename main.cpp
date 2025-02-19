@@ -3,6 +3,11 @@
 #include "functions.h"
 #include <iostream>
 #include <string>
+#include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
+#include <CGAL/convex_hull_2.h>
+
+typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
+typedef K::Point_2 Point_2;
 
 int main() {
 
@@ -51,6 +56,23 @@ int main() {
     std::cout << "\nnumber: " << number << "\nanswer: "
     << answer << ", add one: " << add_one(answer) << std::endl;
 
+    //CGAL testing section
+    std::vector<Point_2> points;
+
+    points.push_back(Point_2(0, 0));
+    points.push_back(Point_2(1, 0));
+    points.push_back(Point_2(1, 1));
+    points.push_back(Point_2(0, 1));
+
+    std::vector<Point_2> result;
+
+    // Compute the convex hull of the points
+    CGAL::convex_hull_2(points.begin(), points.end(), std::back_inserter(result));
+
+    std::cout << "Convex hull points:\n";
+    for (const auto& point : result) {
+        std::cout << "(" << point.x() << ", " << point.y() << ")\n";
+    }
     return 0;
 
 
