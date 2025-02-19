@@ -1,6 +1,7 @@
 #include "header.h"
 #include "Person.h"
 #include "SoccerPlayer.h"
+#include "functions.h"
 
 int main() {
 
@@ -40,6 +41,14 @@ int main() {
 
     //now we delete Messi to free up memory on the Heap
     delete Messi;
+
+    //testing the function
+    int number = 2;
+    int answer;
+
+    answer = square_number(number);
+    std::cout << "\nnumber: " << number << "\nanswer: "
+    << answer << ", add one: " << add_one(answer) << std::endl;
 
     return 0;
 

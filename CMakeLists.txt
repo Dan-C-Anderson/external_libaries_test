@@ -8,4 +8,6 @@ add_executable(class_demo main.cpp
         Person.cpp
         Person.h
         SoccerPlayer.cpp
-        SoccerPlayer.h)
+        SoccerPlayer.h
+        functions.cpp
+        functions.h)
