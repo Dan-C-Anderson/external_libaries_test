@@ -1,13 +1,13 @@
-# ✅ Allow C++ source and header files
+#Allow C++ source and header files
 !*.cpp
 !*.h
 
-# ✅ Allow project documentation and config files
+#Allow project documentation and config files
 !README.md
 !LICENSE
 !.gitignore
 
-# ❌ Ignore CLion-specific settings
+#Ignore CLion-specific settings
 .idea/
 
 #Ignore CMake build directories (default CLion paths)
