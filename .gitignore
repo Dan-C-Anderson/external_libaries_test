@@ -1,0 +1,41 @@
+# ✅ Allow C++ source and header files
+!*.cpp
+!*.h
+
+# ✅ Allow project documentation and config files
+!README.md
+!LICENSE
+!.gitignore
+
+# ❌ Ignore CLion-specific settings
+.idea/
+
+#Ignore CMake build directories (default CLion paths)
+cmake-build-debug/
+cmake-build-release/
+cmake-build-*/
+
+#Ignore CMake temporary files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+#Ignore compiled binary files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+
+#Ignore logs and temporary files
+*.log
+*.swp
+*.swo
+*.tmp
+
+#Ignore macOS and system-generated files
+.DS_Store
+Thumbs.db
