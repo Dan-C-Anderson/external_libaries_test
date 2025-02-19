@@ -6,7 +6,6 @@ include_directories(include)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(class_demo main.cpp
-        header.h
         src/Person.cpp
         include/Person.h
         src/SoccerPlayer.cpp

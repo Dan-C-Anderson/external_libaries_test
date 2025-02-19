@@ -1,7 +1,8 @@
-#include "header.h"
 #include "Person.h"
 #include "SoccerPlayer.h"
 #include "functions.h"
+#include <iostream>
+#include <string>
 
 int main() {
 
